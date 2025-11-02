@@ -2,9 +2,9 @@ name: build
 
 on:
   push:
-    branches:
-      # 以tag分支作为镜像tag
-      - 'main'
+    # branches:
+    #   # 以tag分支作为镜像tag
+    #   - 'main'
     tags:
       - 'v*'
 
