@@ -25,7 +25,7 @@ jobs:
       - name: set outputs
         id: vars
         run: |
-          echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+          echo "::set-output name=tag::$(git describe --tags --abbrev=0 )"
 
       - name: Set up qemu
         uses: docker/setup-qemu-action@v2
