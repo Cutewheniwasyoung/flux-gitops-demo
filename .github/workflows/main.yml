@@ -39,4 +39,4 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAME_SPACE }}/${{ github.repository_owner }}/${{ github.event.repository.name }}:${{ steps.vars.outputs.sha_short }}
+            ${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAME_SPACE }}/${{ github.event.repository.name }}:${{ steps.vars.outputs.sha_short }}
