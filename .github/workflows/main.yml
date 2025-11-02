@@ -44,3 +44,5 @@ jobs:
           push: true
           tags: |
             ${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAME_SPACE }}/${{ github.event.repository.name }}:${{ steps.vars.outputs.tag }}
+
+            
