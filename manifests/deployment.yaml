@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fluxcd-gitops-demo
+spec:
+  selector:
+    matchLabels:
+      app: fluxcd-gitops-demo
+  template:
+    metadata:
+      labels:
+        app: fluxcd-gitops-demo
+    spec:
+      containers:
+      - name: fluxcd-gitops-demo
+        image: registry.cn-hangzhou.aliyuncs.com/fluxcd-demo/flux-gitops-demo:v1.0.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"

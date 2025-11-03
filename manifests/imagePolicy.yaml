@@ -1,0 +1,12 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: fluxcd-gitops-demo
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: fluxcd-gitops-demo
+  policy:
+    # latest: true
+    alphabetical:
+      order: desc   
