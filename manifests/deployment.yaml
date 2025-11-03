@@ -11,9 +11,13 @@ spec:
       labels:
         app: fluxcd-gitops-demo
     spec:
+      imagePullSecrets:
+        - name: acr-secret      
       containers:
       - name: fluxcd-gitops-demo
-        image: registry.cn-hangzhou.aliyuncs.com/fluxcd-demo/flux-gitops-demo:v1.0.0
+        imagePullPolicy: IfNotPresent
+        image: registry.cn-hangzhou.aliyuncs.com/fluxcd-demo/flux-gitops-demo:de4b264df161a5d3eaa1cb9c87a05709ae4a90c9
+
         resources:
           limits:
             memory: "128Mi"
