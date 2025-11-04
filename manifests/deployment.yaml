@@ -17,7 +17,7 @@ spec:
       - name: fluxcd-gitops-demo
         imagePullPolicy: IfNotPresent
         image: registry.cn-hangzhou.aliyuncs.com/fluxcd-demo/flux-gitops-demo:de4b264df161a5d3eaa1cb9c87a05709ae4a90c9
-
+        command: ["sleep", "9999"]
         resources:
           limits:
             memory: "128Mi"

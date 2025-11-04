@@ -4,8 +4,10 @@ metadata:
   name: fluxcd-gitops-demo
 spec:
   interval: 5s
-  path: /app
+  path: ./manifests
   prune: true
+
+  targetNamespace: flux-system
   sourceRef:
     # 需要定义 但实际监听仓库tag时无用
     kind: GitRepository
