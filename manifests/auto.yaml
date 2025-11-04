@@ -7,7 +7,7 @@ spec:
   interval: 1m
   sourceRef:
     kind: GitRepository
-    name: fluxcd-gitops-demo
+    name: flux-gitops-demo-github
   git:
     checkout:
       ref:

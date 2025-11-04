@@ -1,0 +1,13 @@
+# repo-a
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: flux-gitops-demo-github
+  namespace: flux-system
+spec:
+  url: https://github.com/Cutewheniwasyoung/flux-gitops-demo.git
+  interval: 1m
+  ref:
+    branch: main
+#  secretRef:
+#    name: flux-git-ssh
