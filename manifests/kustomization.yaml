@@ -6,7 +6,6 @@ spec:
   interval: 5s
   path: ./manifests
   prune: true
-
   targetNamespace: flux-system
   sourceRef:
     # 需要定义 但实际监听仓库tag时无用
