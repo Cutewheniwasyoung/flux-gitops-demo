@@ -1,18 +1,4 @@
-apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
+apiVersion: kustomize.config.k8s.io/v1
 kind: Kustomization
-metadata:
-  name: fluxcd-gitops-demo
-spec:
-  interval: 5s
-  path: ./manifests
-  prune: true
-  targetNamespace: flux-system
-  sourceRef:
-    # 需要定义 但实际监听仓库tag时无用
-    kind: GitRepository
-    name: fluxcd-gitops-demo
-  healthChecks:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: fluxcd-gitops-demo
-      namespace: flux-system
+resources:
+  - deployment.yaml
