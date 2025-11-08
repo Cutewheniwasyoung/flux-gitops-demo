@@ -18,7 +18,3 @@ spec:
         imagePullPolicy: IfNotPresent
         image: registry.cn-hangzhou.aliyuncs.com/fluxcd-demo/flux-gitops-demo:6f88c0cf07f46562e75fd85ae0dc8352e7bdeb15
         command: ["sleep", "9999"]
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
