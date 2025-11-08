@@ -42,7 +42,7 @@ jobs:
         with:
           context: .
           push: true
-          platforms: linux/arm64
+          platforms: linux/amd64
           tags: |
             ${{ env.ALIYUN_REGISTRY }}/${{ env.ALIYUN_NAME_SPACE }}/${{ github.event.repository.name }}:${{ steps.vars.outputs.tag }}
 
