@@ -16,5 +16,5 @@ spec:
       containers:
       - name: fluxcd-gitops-demo
         imagePullPolicy: IfNotPresent
-        image: registry.cn-hangzhou.aliyuncs.com/fluxcd-demo/flux-gitops-demo:6f88c0cf07f46562e75fd85ae0dc8352e7bdeb15
+        image: registry.cn-hangzhou.aliyuncs.com/fluxcd-demo/flux-gitops-demo:148de0889b3f73371ccf466accf8574a3f355178
         command: ["sleep", "9999"]
